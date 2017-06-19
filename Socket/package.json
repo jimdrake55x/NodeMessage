@@ -1,0 +1,16 @@
+{
+  "name": "sockettest",
+  "version": "1.0.0",
+  "description": "A Test Folder For a Socket Messaging App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "socket.io": "^2.0.3"
+  }
+}
