@@ -15,9 +15,11 @@ io.on('connection',function(socket){
        console.log('A User has Disconnected'); 
     });
     socket.on('chat-message',function(msg){
-        console.log('Message: ' + msg);
-    });
+        console.log(msg);
+        io.emit('chat message', msg);
+  });
 });
+    
 
 http.listen(3000,function(){
     console.log('Listening on Port 3000');
