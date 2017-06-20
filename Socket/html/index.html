@@ -20,16 +20,26 @@
     </form>
     <script src="./jquery/jquery-3.2.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
+    <script src="./crypto/aes.js"></script>
     <script>
         $(function(){
             var socket = io();
+            
             $('form').submit(function(){
-                socket.emit('chat-message',$('#m').val());
+                var MessageToSend = CryptoJS.AES.encrypt($('#m').val(),'wwow');
+                socket.emit('chat message',MessageToSend.toString());
                 return false;
             });
+            
             socket.on('chat message',function(msg){
+                var RecievedMessage = CryptoJS.AES.decrypt(msg,'wwow').toString(CryptoJS.enc.Utf8);
+                $('#messages').append($('<li>').text(RecievedMessage));
+            });
+            
+            socket.on('user connect',function(msg){
                 $('#messages').append($('<li>').text(msg));
             });
+            
         });
     </script>  
   </body>
