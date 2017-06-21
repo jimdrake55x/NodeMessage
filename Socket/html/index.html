@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Socket.IO chat</title>
+      
+    //CSS for styling the page. This will be moved to its own file eventually!
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
@@ -13,6 +15,8 @@
       #messages li:nth-child(odd) { background: #eee; }
     </style>
   </head>
+
+  //HTML Elements
   <body>
     <ul id="messages"></ul>
     <form action="">
@@ -20,6 +24,8 @@
         <input id="key" autocomplete="off" text="key"/>
         <button>Send</button>
     </form>
+      
+    //Javascript for sending and recieving messages  
     <script src="./jquery/jquery-3.2.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./crypto/aes.js"></script>
