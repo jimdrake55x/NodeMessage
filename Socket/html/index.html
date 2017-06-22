@@ -2,20 +2,24 @@
 <html>
   <head>
       <link rel='stylesheet' type="text/css" href="./css/index/main.css">
-      <title>Socket.IO chat</title>
+      <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <title>Socket.IO chat</title>
   </head>
 
   <body>
-    <ul id="messages"></ul>
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/crypto-js/crypto-js.js"></script>
+  <script src="./js/index/main.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.js"></script>
+  <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" />
         <input id="key" autocomplete="off" text="key"/>
         <button>Send</button>
     </form>
       
-    <script src="/jquery/dist/jquery.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/crypto-js/crypto-js.js"></script>
-    <script src="./js/index/main.js"></script> 
+
   </body>
 </html>
