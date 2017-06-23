@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
   <head>
-      <link rel='stylesheet' type="text/css" href="./css/index/main.css">
+      
       <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-
+      <link href="./css/index/main.css" rel="stylesheet" type="text/css">
     <title>Socket.IO chat</title>
   </head>
 
@@ -15,11 +15,17 @@
   <script src="/bootstrap/dist/js/bootstrap.js"></script>
   <ul id="messages"></ul>
     <form action="">
-      <input id="m" autocomplete="off" />
-        <input id="key" autocomplete="off" text="key"/>
-        <button>Send</button>
+        <div class="row">
+            <div class="col-md-5">
+                <input id="m" autocomplete="off"/>
+            </div>
+            <div class="col-md-5">
+                <input id="key" autocomplete="off" text="key"/>
+            </div>
+            <div class="col-md-2">
+                <button>Send</button>
+            </div>
+        </div>
     </form>
-      
-
   </body>
 </html>
