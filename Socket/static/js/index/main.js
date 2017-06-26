@@ -9,7 +9,7 @@ $(function(){
             
             socket.on('chat message',function(msg){
                 var RecievedMessage = CryptoJS.AES.decrypt(msg,$('#key').val()).toString(CryptoJS.enc.Utf8);
-                $('#messages').append($('<li>').text(RecievedMessage));
+                $('#messages').append($('<li class="list-group-item">').text(RecievedMessage));
             });
             
             socket.on('user connect',function(msg){
