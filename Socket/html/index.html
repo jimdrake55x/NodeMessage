@@ -13,11 +13,13 @@
   <script src="/crypto-js/crypto-js.js"></script>
   <script src="./js/index/main.js"></script>
   <script src="/bootstrap/dist/js/bootstrap.js"></script>
-  
+  <div class="container">
     <ul id="messages" class="list-group"></ul>      
-  
-        <form action="">    
-            <div class="row">
+        
+        <form class="form-inline" action="">
+            
+            <div class="form-group">
+                
                 <div class="col-md-5">
                     <input id="m" autocomplete="off" class="form-control" placeholder="Message"/>
                 </div>
@@ -25,9 +27,19 @@
                     <input id="key" autocomplete="off" class="form-control" placeholder="key"/>
                 </div>
                  <div class="col-md-2">
-                    <button class="btn btn-primary btn-lg">Send</button>
+                    <button class="btn btn-primary">Send</button>
                 </div>
+                    
             </div>
         </form>
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Node Message</a>
+                </div>
+                //Pick up from CSS Navbar example here
+            </div>
+        </div>
+    </div>
   </body>
 </html>
