@@ -4,6 +4,7 @@ $(function(){
             $('form').submit(function(){
                 var MessageToSend = CryptoJS.AES.encrypt($('#Message').val(),$('#MessageKey').val());
                 socket.emit('chat message',MessageToSend.toString());
+                $('#messages').append($('<li class="list-group-item">').text(($('#Message').val())));
                 return false;
             });
             
@@ -13,7 +14,7 @@ $(function(){
             });
             
             socket.on('user connect',function(msg){
-                $('#messages').append($('<li>').text(msg));
+                $('#messages').append($('<li class="list-group-item list-group-item-info">').text(msg));
             });
             
         });
