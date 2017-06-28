@@ -15,32 +15,23 @@
   <script src="/bootstrap/dist/js/bootstrap.js"></script>
   <div class="container">
     <ul id="messages" class="list-group"></ul>      
-        
-        <form class="form-inline" action="">
-            
-            <div class="form-group">
-                
-                <div class="col-md-5">
-                    <input id="m" autocomplete="off" class="form-control" placeholder="Message"/>
-                </div>
-                <div class="col-md-5">
-                    <input id="key" autocomplete="off" class="form-control" placeholder="key"/>
-                </div>
-                 <div class="col-md-2">
-                    <button class="btn btn-primary">Send</button>
-                </div>
-                    
-            </div>
-        </form>
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Node Message</a>
                 </div>
-                <div class="navbar-nav nav">
-                    <form class="form-inline">
-                        <div class="form-group">
+                <div class="row navbar-padding">
+                    <form>
+                        <div class="col-md-6">
+                            <label for="Message" class="sr-only">Message</label>
                             <input id="Message" autocomplete="off" class="form-control" placeholder="Message"/>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="MessageKey" class="sr-only">Message Key</label>
+                            <input id="MessageKey" autocomplete="off" class="form-control" placeholder="Key"/>
+                        </div>
+                        <div class=col-md-2>
+                            <button type="submit" class="btn btn-primary btn-block">Send</button>
                         </div>
                     </form>
                 </div>

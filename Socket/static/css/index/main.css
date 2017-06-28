@@ -29,3 +29,8 @@ body
 {
     background: #eee;
 }
+
+.navbar-padding
+{
+    padding-top: 6px;
+}
