@@ -18,3 +18,7 @@ $(function(){
             });
             
         });
+
+$(window).on('load',function(){
+    $('#nickNameModal').modal('show');
+});
