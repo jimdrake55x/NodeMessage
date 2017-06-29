@@ -1,7 +1,7 @@
 $(function(){
             var socket = io();
             
-            $('form').submit(function(){
+            $('#messageForm').submit(function(){
                 var MessageToSend = CryptoJS.AES.encrypt($('#Message').val(),$('#MessageKey').val());
                 socket.emit('chat message',MessageToSend.toString());
                 $('#messages').append($('<li class="list-group-item">').text(($('#Message').val())));
