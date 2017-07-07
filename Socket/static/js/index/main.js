@@ -11,6 +11,7 @@ $(function(){
                 socket.emit('chat message',MessageToSend.toString());
                 $('#messages').append($('<li class="list-group-item">').text('You : ' + ($('#Message').val())));
                 $('#Message').val('');
+                $(document).scrollTop($(document).height());
                 return false;
             });
 
