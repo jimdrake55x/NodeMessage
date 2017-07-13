@@ -15,29 +15,29 @@
   <script src="/bootstrap/dist/js/bootstrap.js"></script>
   <script src="/markdown/lib/markdown.js" type="text/javascript"></script>
   <div class="container">
-    <ul id="messages" class="list-group"></ul>      
-        <div class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Node Message</a>
-                </div>
-                <div class="row navbar-padding">
-                    <form id="messageForm">
-                        <div class="col-md-6">
-                            <label for="Message" class="sr-only">Message</label>
-                            <input id="Message" autocomplete="off" class="form-control" placeholder="Message"/>
-                        </div>
-                        <div class="col-md-2">
-                            <label for="MessageKey" class="sr-only">Message Key</label>
-                            <input id="MessageKey" autocomplete="off" class="form-control" placeholder="Key"/>
-                        </div>
-                        <div class=col-md-2>
-                            <button type="submit" class="btn btn-primary btn-block">Send</button>
-                        </div>
-                    </form>
-                </div>
+    <dl id="messages" class="list-group"></dl>      
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Node Message</a>
+            </div>
+            <div class="row navbar-padding">
+                <form id="messageForm">
+                    <div class="col-md-6">
+                        <label for="Message" class="sr-only">Message</label>
+                        <input id="Message" autocomplete="off" class="form-control" placeholder="Message"/>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="MessageKey" class="sr-only">Message Key</label>
+                        <input id="MessageKey" autocomplete="off" class="form-control" placeholder="Key"/>
+                    </div>
+                    <div class=col-md-2>
+                        <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
     <div class="modal fade" tabindex="-1" role="dialog" id="nickNameModal">
         <div class="modal-dialog" role="document">

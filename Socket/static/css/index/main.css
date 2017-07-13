@@ -25,7 +25,7 @@ body
     padding: 5px 10px;
 }
      
-#messages li:nth-child(odd) 
+#messages .row.list-group-item:nth-child(odd) 
 {
     background: #eee;
 }
