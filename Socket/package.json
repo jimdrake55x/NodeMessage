@@ -4,6 +4,8 @@
   "description": "A Test Folder For a Socket Messaging App",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "stop": "CTRL+C",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
