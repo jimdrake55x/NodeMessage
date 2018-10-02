@@ -27,7 +27,7 @@ body
      
 #messages .row.list-group-item:nth-child(odd) 
 {
-    background: #eee;
+    background: #eef;
 }
 
 .navbar-padding
