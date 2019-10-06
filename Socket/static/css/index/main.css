@@ -27,10 +27,10 @@ body
      
 #messages .row.list-group-item:nth-child(odd) 
 {
-    background: #eee;
+    background: #eeeeff;
 }
 
 .navbar-padding
 {
-    padding-top: 6px;
+    padding-top: 10px;
 }
